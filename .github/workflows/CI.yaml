@@ -1,0 +1,12 @@
+---
+# yamllint disable rule:line-length
+name: CI
+
+# yamllint disable-line rule:truthy
+on:
+  - push
+  - pull_request
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-20.04
