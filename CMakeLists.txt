@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.0)
 project(probe C)
 
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_FLAGS "-Wall -Wextra -Wpedantic ${CMAKE_C_FLAGS}")
+
 if (WIN32)
   add_definitions(-D_CRT_SECURE_NO_WARNINGS)
 endif ()
