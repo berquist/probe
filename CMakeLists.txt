@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.10.0)
-project(probe)
+cmake_minimum_required(VERSION 3.0)
+project(probe C)
 
 if (WIN32)
   add_definitions(-D_CRT_SECURE_NO_WARNINGS)
