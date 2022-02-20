@@ -37,7 +37,7 @@ set(probe_HEADERS
 	utility.h
 )
 
-add_executable(probe ${probe_SOURCES} ${probe_HEADERS})
+add_executable(probe ${probe_SOURCES})
 if (NOT WIN32)
   target_link_libraries(probe m)
 endif()
